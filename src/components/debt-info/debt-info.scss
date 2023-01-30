@@ -1,8 +1,8 @@
 .debt-info {
-  padding: 15px 0 30px;
+  padding: 20px 0 40px;
   background-color: #fff;
   @media (min-width: $XL) {
-    padding: 110px 0 100px;
+    padding: 60px 0;
   }
 }
 
@@ -30,7 +30,6 @@
 }
 
 .debt-info__article {
-  margin-bottom: 40px;
   @media (min-width: $L) {
     grid-column: 3/-1;
   }
@@ -41,7 +40,7 @@
 
 .debt-info__article-title {
   margin-bottom: 13px;
-  @media (min-width: $L) {
+  @media (min-width: $M) {
     margin-bottom: 23px;
   }
 }
@@ -56,14 +55,14 @@
 
 .debt-info__debt-check {
   grid-column: 1/-1;
+  margin-bottom: 60px;
 }
 
 .debt-check {
   width: 100%;
   padding: 22px;
   border-radius: 14px;
-  background:
-    $color-secondary url("../img/debt-check-bg/mobile-bg.svg") center /
+  background: $color-secondary url("../img/debt-check-bg/mobile-bg.svg") center /
     cover no-repeat;
   box-shadow: 0 26px 28px -2px #00294917;
   color: $color-bg;

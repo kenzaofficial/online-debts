@@ -1,13 +1,13 @@
 .footer {
-  padding: 115px 0 30px;
+  padding: 40px 0 30px;
   background-color: $color-dark-blue;
   text-align: center;
-  color: rgba($color-bg, $alpha: 0.7);
+  color: rgba($color-text-secondary, $alpha: 0.5);
   @media (min-width: $M) {
     text-align-last: left;
   }
   @media (min-width: $XL) {
-    padding: 170px 0 30px;
+    padding: 50px 0 30px;
   }
 }
 
@@ -15,7 +15,7 @@
   display: inline-block;
   margin-bottom: 25px;
   @media (min-width: $L) {
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
 }
 
@@ -85,7 +85,7 @@
 
 .footer__contacts {
   display: grid;
-  row-gap: 17px;
+  row-gap: 15px;
   font-size: 10px;
   line-height: 16px;
   @media (min-width: $M) {

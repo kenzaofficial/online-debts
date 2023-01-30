@@ -1,12 +1,16 @@
 .hero {
-  padding: 10px 0 20x;
+  padding: 5px 0 20px;
   @media (min-width: $M) {
-    padding: 45px 0 55px;
+    padding: 25px 0 30px;
+  }
+  @media (min-width: $L) {
+    padding-bottom: 0;
   }
 }
 
 .hero__container {
   display: flex;
+  position: relative;
 }
 
 .hero__content {
@@ -14,13 +18,15 @@
 }
 
 .hero__title {
-  margin-bottom: 15px;
+  margin-bottom: 11px;
+  max-width: 220px;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
   color: $color-dark-blue;
   @media (min-width: $M) {
-    margin-bottom: 35px;
+    max-width: 550px;
+    margin-bottom: 25px;
     font-size: 24px;
     line-height: 32px;
   }
@@ -38,6 +44,9 @@
   display: none;
   @media (min-width: $L) {
     display: block;
-    flex: 1 0 620px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -150px;
   }
 }

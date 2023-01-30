@@ -12,17 +12,17 @@
   row-gap: 10px;
   @media (min-width: $M) {
     padding: 34px 50px 34px;
-    grid-template-columns: auto 1fr 220px;
+    grid-template-columns: auto 1fr;
     grid-template-areas:
-      "logo titles titles"
-      "logo text button";
+      "logo titles "
+      "logo text ";
     column-gap: 10px;
     row-gap: 15px;
   }
   @media (min-width: $L) {
     grid-template-areas:
-      "logo titles button"
-      "logo text button";
+      "logo titles"
+      "logo text";
   }
   .card-service__logo {
     width: 40px;
@@ -32,9 +32,14 @@
     img {
       width: 100%;
     }
-    @media (min-width: $L) {
+    @media (min-width: $M) {
       width: 80px;
       height: 80px;
+      margin-right: 35px;
+    }
+    @media (min-width: $L) {
+      width: 100px;
+      height: 100px;
       margin-right: 35px;
     }
   }
@@ -66,12 +71,11 @@
       padding: 22px;
     }
     &:hover {
-      background:
-        linear-gradient(
-          165.71deg,
-          $color-secondary 20.77%,
-          rgba(0, 142, 255, 0) 116.88%
-        );
+      background: linear-gradient(
+        165.71deg,
+        $color-secondary 20.77%,
+        rgba(0, 142, 255, 0) 116.88%
+      );
     }
     &:active {
       background: $color-secondary;
@@ -112,7 +116,6 @@
     }
   }
   p {
-    max-width: 670px;
     margin: 0;
     line-height: 19px;
     grid-area: text;

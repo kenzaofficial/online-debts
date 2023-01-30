@@ -1,13 +1,13 @@
 .services {
-  padding: 20px 0 40px;
+  padding: 20px 0;
   @media (min-width: $L) {
-    padding: 60px 0 120px;
+    padding: 60px 0;
   }
 }
 
 .services__title {
   max-width: 600px;
-  margin: 0 auto 13px;
+  margin-bottom: 15px;
   @media (min-width: $L) {
     margin-bottom: 20px;
   }

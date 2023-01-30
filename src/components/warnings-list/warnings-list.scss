@@ -3,13 +3,15 @@
   grid-template-columns: 1fr 1fr;
   margin: 0;
   padding: 0;
-  gap: 25px 10px;
+  gap: 25px 0;
   list-style: none;
   @media (min-width: $L) {
     row-gap: 40px;
     column-gap: 10px;
   }
   img {
+    width: 20px;
+    height: 20px;
     margin-bottom: 12px;
     @media (min-width: $M) {
       width: 24px;
