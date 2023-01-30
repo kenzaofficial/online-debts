@@ -1,0 +1,125 @@
+.card-service {
+  display: grid;
+  align-items: center;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 12px 28px -2px #dfeffc;
+  grid-template-areas:
+    "logo titles"
+    "text  text"
+    ".  button";
+  grid-template-columns: auto 1fr;
+  row-gap: 10px;
+  @media (min-width: $M) {
+    padding: 34px 50px 34px;
+    grid-template-columns: auto 1fr 220px;
+    grid-template-areas:
+      "logo titles titles"
+      "logo text button";
+    column-gap: 10px;
+    row-gap: 15px;
+  }
+  @media (min-width: $L) {
+    grid-template-areas:
+      "logo titles button"
+      "logo text button";
+  }
+  .card-service__logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    grid-area: logo;
+    img {
+      width: 100%;
+    }
+    @media (min-width: $L) {
+      width: 80px;
+      height: 80px;
+      margin-right: 35px;
+    }
+  }
+  a {
+    position: relative;
+    margin-left: auto;
+    padding: 9px 22px;
+    background: $color-secondary;
+    font-size: 0;
+    font-weight: 700;
+    grid-area: button;
+    @media (min-width: $M) {
+      padding: 15px 22px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 18px;
+      height: 14px;
+      background: url("../img/arrow.svg") center / 18px no-repeat;
+      @media (min-width: $M) {
+        display: none;
+      }
+    }
+    @media (min-width: $L) {
+      padding: 22px;
+    }
+    &:hover {
+      background:
+        linear-gradient(
+          165.71deg,
+          $color-secondary 20.77%,
+          rgba(0, 142, 255, 0) 116.88%
+        );
+    }
+    &:active {
+      background: $color-secondary;
+      box-shadow: none;
+    }
+    @media (min-width: $M) {
+      width: 100%;
+      max-width: 220px;
+      background: $color-secondary;
+      font-size: 16px;
+    }
+  }
+  div:last-of-type {
+    grid-area: titles;
+    @media (min-width: $M) {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 10px;
+    }
+    h4 {
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 20px;
+      color: $color-dark-blue;
+      @media (min-width: $M) {
+        font-size: 27px;
+        line-height: 34px;
+      }
+    }
+    span {
+      font-size: 8px;
+      line-height: 10px;
+      color: $color-secondary;
+      @media (min-width: $M) {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+  p {
+    max-width: 670px;
+    margin: 0;
+    line-height: 19px;
+    grid-area: text;
+    @media (min-width: $M) {
+      font-size: 15px;
+      line-height: 20px;
+      color: $color-black;
+    }
+  }
+}

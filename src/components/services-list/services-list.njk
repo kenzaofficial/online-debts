@@ -1,0 +1,31 @@
+{% macro list(items, nameList) %}
+<ul class="{{ nameList }}">
+  {% for item in items %}
+  <li class="{{ item.class }}">
+    <div class="card-service">
+      {% if item.pathImg %}
+      <div class="card-service__logo">
+        <img src="{{ item.pathImg }}" alt="company logo">
+      </div>
+      {% endif %}
+      <div>
+        {% if item.title %}
+        <h4>{{ item.title }}</h4>
+        {% endif %}
+        {% if item.subTitle %}
+        <span>{{ item.subTitle }}</span>
+        {% endif %}
+      </div>
+      {% if item.description %}
+      <p>{{ item.description }}</p>
+      {% endif %}
+      {% if item.button %}
+      <a href="#" class="button">
+        {{ item.button }}
+      </a>
+      {% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}

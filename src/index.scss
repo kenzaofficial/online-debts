@@ -1,0 +1,26 @@
+@import "common/scss/variables";
+@import "common/scss/mixins";
+@import "common/scss/functions";
+
+// Common
+
+@import "common/scss/fonts";
+@import "common/scss/normalize";
+// @import 'common/scss/reset';
+
+@import "common/scss/base";
+
+// Components
+
+@import "components/header/header";
+@import "components/hero/hero";
+@import "components/debt-info/debt-info";
+@import "components/warnings-list/warnings-list";
+@import "components/services/services";
+@import "components/services-list/services-list";
+@import "components/feedback/feedback";
+@import "components/footer/footer";
+
+// Pages
+
+@import "pages/main/main";

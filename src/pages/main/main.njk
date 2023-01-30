@@ -1,0 +1,22 @@
+{% from 'common/njk/head.njk' import head %}
+{% from 'common/njk/scripts.njk' import scripts %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+  {{ head('index', 'Проверка долгов') }}
+
+  <body class="p-main">
+    {% include 'components/header/header.njk' %}
+    <main>
+      <h1 hidden> Проверка долгов </h1>
+      {% include 'components/hero/hero.njk' %}
+      {% include 'components/debt-info/debt-info.njk' %}
+      {% include 'components/services/services.njk' %}
+      {% include 'components/feedback/feedback.njk' %}
+    </main>
+    {% include 'components/footer/footer.njk' %}
+    {{ scripts('index') }}
+  </body>
+
+</html>

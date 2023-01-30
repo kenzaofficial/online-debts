@@ -1,0 +1,17 @@
+{% macro list(items, nameList) %}
+<ul class="{{ nameList }}">
+  {% for item in items %}
+  <li class="{{ item.class }}">
+    {% if item.pathImg %}
+    <img src="{{ item.pathImg }}" alt="warning sign">
+    {% endif %}
+    {% if item.title %}
+    <h4>{{ item.title }}</h4>
+    {% endif %}
+    {% if item.description %}
+    <p>{{ item.description }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}

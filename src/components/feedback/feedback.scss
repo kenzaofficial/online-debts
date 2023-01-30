@@ -1,0 +1,63 @@
+.feedback {
+  position: relative;
+  margin-bottom: -77px;
+  @media (min-width: $L) {
+    margin-bottom: -95px;
+  }
+}
+
+.feedback__body {
+  display: grid;
+  padding: 20px 55px 30px;
+  border-radius: 14px;
+  background:
+    $color-secondary url("../img/feedback-bg/mobile-bg.svg") center /
+    cover no-repeat;
+  place-items: center;
+  @media (min-width: $M) {
+    background-image: url("../img/feedback-bg/desktop-bg.svg");
+  }
+
+  row-gap: 25px;
+  @media (min-width: $XL) {
+    display: flex;
+    padding: 50px 50px 60px 90px;
+    column-gap: 10px;
+  }
+}
+
+.feedback__title {
+  max-width: 172px;
+  color: $color-bg;
+  @media (min-width: $M) {
+    max-width: none;
+  }
+}
+
+.feedback__button {
+  width: 100%;
+  max-width: 170px;
+  background-color: #fff;
+  box-shadow: 0 13px 28px -13px $color-primary-blue;
+  font-weight: 700;
+  color: $color-primary-blue;
+  cursor: pointer;
+  @media (min-width: $M) {
+    max-width: 300px;
+  }
+  @media (min-width: $XL) {
+    max-width: 220px;
+    margin-left: auto;
+  }
+  &:hover {
+    background:
+      linear-gradient(
+        187.69deg,
+        #fff 5.95%,
+        rgba(255, 255, 255, 0) 245.63%
+      );
+  }
+  &:active {
+    background: #fff;
+  }
+}

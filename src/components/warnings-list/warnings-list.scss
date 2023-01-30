@@ -1,0 +1,37 @@
+.warnings__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  gap: 25px 10px;
+  list-style: none;
+  @media (min-width: $L) {
+    row-gap: 40px;
+    column-gap: 10px;
+  }
+  img {
+    margin-bottom: 12px;
+    @media (min-width: $M) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  h4 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    @media (min-width: $M) {
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+  p {
+    margin: 0;
+    font-size: 10px;
+    line-height: 16px;
+    @media (min-width: $L) {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+}
