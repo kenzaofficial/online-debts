@@ -1,5 +1,5 @@
 .hero {
-  padding: 30px 0;
+  padding: 10px 0 20x;
   @media (min-width: $M) {
     padding: 45px 0 55px;
   }
@@ -21,12 +21,10 @@
   color: $color-dark-blue;
   @media (min-width: $M) {
     margin-bottom: 35px;
-    padding-top: 32px;
     font-size: 24px;
     line-height: 32px;
   }
   @media (min-width: $XL) {
-    padding-top: 52px;
     font-size: 40px;
     line-height: 56px;
   }
@@ -34,18 +32,6 @@
 
 .hero__text {
   margin: 0;
-  margin-bottom: 12px;
-  @media (min-width: $XL) {
-    margin-bottom: 35px;
-  }
-}
-
-.hero__button {
-  max-width: 170px;
-  @media (min-width: $M) {
-    width: 100%;
-    max-width: 273px;
-  }
 }
 
 .hero__image {
