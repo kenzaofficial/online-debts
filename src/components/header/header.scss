@@ -1,24 +1,19 @@
 .header {
   padding-top: 16px;
-  @include media(M){
+  @include media(M) {
     padding-top: 30px;
   }
-  @include media(XL){
+  @include media(XL) {
     padding-top: 60px;
   }
-}
-.header__container {
 }
 
 .header__body {
   padding-top: 16px;
 }
 
-.header__logo {
-}
-
 .logo__img {
-  @include media(M){
+  @include media(M) {
     width: 80px;
     height: 80px;
   }

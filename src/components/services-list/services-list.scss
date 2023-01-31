@@ -1,28 +1,20 @@
 .card-service {
   display: grid;
   align-items: center;
-  padding: 20px;
-  border-radius: 14px;
-  box-shadow: 0 12px 28px -2px #dfeffc;
   grid-template-areas:
     "logo titles"
-    "text  text"
-    ".  button";
+    "text  text";
   grid-template-columns: auto 1fr;
-  row-gap: 10px;
-  @media (min-width: $M) {
-    padding: 34px 50px 34px;
-    grid-template-columns: auto 1fr;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 12px 28px -2px #DFEFFC;
+
+  @include media(M) {
+    padding: 35px 50px;
     grid-template-areas:
       "logo titles "
       "logo text ";
     column-gap: 10px;
-    row-gap: 15px;
-  }
-  @media (min-width: $L) {
-    grid-template-areas:
-      "logo titles"
-      "logo text";
   }
   .card-service__logo {
     width: 40px;
@@ -32,15 +24,15 @@
     img {
       width: 100%;
     }
-    @media (min-width: $M) {
+    @include media(M) {
       width: 80px;
       height: 80px;
       margin-right: 35px;
     }
-    @media (min-width: $L) {
+    @include media(L) {
       width: 100px;
       height: 100px;
-      margin-right: 35px;
+      margin-right: 30px;
     }
   }
   a {
@@ -51,7 +43,7 @@
     font-size: 0;
     font-weight: 700;
     grid-area: button;
-    @media (min-width: $M) {
+    @include media(M) {
       padding: 15px 22px;
     }
     &::before {
@@ -67,21 +59,22 @@
         display: none;
       }
     }
-    @media (min-width: $L) {
+    @include media(L) {
       padding: 22px;
     }
     &:hover {
-      background: linear-gradient(
-        165.71deg,
-        $color-secondary 20.77%,
-        rgba(0, 142, 255, 0) 116.88%
-      );
+      background:
+        linear-gradient(
+          165.71deg,
+          $color-secondary 20.77%,
+          rgba(0, 142, 255, 0) 116.88%
+        );
     }
     &:active {
       background: $color-secondary;
       box-shadow: none;
     }
-    @media (min-width: $M) {
+    @include media(M) {
       width: 100%;
       max-width: 220px;
       background: $color-secondary;
@@ -90,7 +83,7 @@
   }
   div:last-of-type {
     grid-area: titles;
-    @media (min-width: $M) {
+    @include media(M) {
       display: flex;
       flex-wrap: wrap;
       column-gap: 10px;
@@ -100,7 +93,7 @@
       font-weight: 700;
       line-height: 20px;
       color: $color-dark-blue;
-      @media (min-width: $M) {
+      @include media(M) {
         font-size: 27px;
         line-height: 34px;
       }
@@ -109,17 +102,18 @@
       font-size: 8px;
       line-height: 10px;
       color: $color-secondary;
-      @media (min-width: $M) {
+      @include media(M) {
         font-size: 12px;
         line-height: 20px;
       }
     }
   }
   p {
+    max-width: 850px;
     margin: 0;
     line-height: 19px;
     grid-area: text;
-    @media (min-width: $M) {
+    @include media(M) {
       font-size: 15px;
       line-height: 20px;
       color: $color-black;
