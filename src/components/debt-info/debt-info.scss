@@ -1,22 +1,22 @@
 .debt-info {
-  padding: 15px 0 30px;
-  background-color: #fff;
-  @media (min-width: $XL) {
-    padding: 110px 0 100px;
+  padding: 20px 0 40px;
+  background-color: $color-white;
+  @include media(XL) {
+    padding: 60px 0 90px;
   }
 }
 
 .debt-info__body {
-  @media (min-width: $XL) {
+  @include media(XL) {
     display: grid;
-    grid-template-columns: 498px auto 493px;
-    row-gap: 110px;
+    // grid-template-columns: 498px auto 493px;
+    grid-template-columns: 498px auto;
   }
 }
 
 .debt-info__warnings {
   margin-bottom: 40px;
-  @media (min-width: $XL) {
+  @include media(XL) {
     margin-bottom: 0;
   }
 }
@@ -24,31 +24,33 @@
 .warnings__title {
   margin-bottom: 20px;
   line-height: 24px;
-  @media (min-width: $L) {
+  @include media(L) {
     line-height: 38px;
   }
 }
 
 .debt-info__article {
-  margin-bottom: 40px;
-  @media (min-width: $L) {
-    grid-column: 3/-1;
+  @include media(L) {
+    max-width: 575px;
+    justify-self: flex-end;
+    grid-column: 2/-1;
   }
-  @media (min-width: $XL) {
+  @include media(XL) {
     margin-bottom: 0;
   }
 }
 
 .debt-info__article-title {
   margin-bottom: 13px;
-  @media (min-width: $L) {
+  @include media(M) {
     margin-bottom: 23px;
   }
 }
 
 .debt-info__article-text {
   margin: 0;
-  @media (min-width: $L) {
+  @include media(L) {
+    max-width: 495px;
     font-size: 15px;
     line-height: 24px;
   }
@@ -56,6 +58,10 @@
 
 .debt-info__debt-check {
   grid-column: 1/-1;
+  margin-bottom: 60px;
+  @include media(XL) {
+    margin-bottom: 80px;
+  }
 }
 
 .debt-check {
@@ -67,7 +73,7 @@
     cover no-repeat;
   box-shadow: 0 26px 28px -2px #00294917;
   color: $color-bg;
-  @media (min-width: $L) {
+  @include media(L) {
     padding: 32px;
     background-image: url("../img/debt-check-bg/desktop-bg.svg");
   }
@@ -76,7 +82,7 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 19px;
-    @media (min-width: $M) {
+    @include media(M) {
       font-size: 16px;
       line-height: 20px;
     }
@@ -87,7 +93,7 @@
   max-width: 160px;
   margin-bottom: 12px;
   color: inherit;
-  @media (min-width: $S) {
+  @include media(S) {
     max-width: none;
     margin-bottom: 5px;
   }
@@ -95,7 +101,7 @@
 
 .debt-check__content {
   margin: 0;
-  @media (min-width: $L) {
+  @include media(L) {
     display: grid;
     align-items: center;
     max-width: 930px;
@@ -106,7 +112,7 @@
 }
 
 .debt-check__column--right p {
-  @media (min-width: $L) {
+  @include media(L) {
     line-height: 30px;
   }
 }

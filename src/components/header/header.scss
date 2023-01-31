@@ -1,90 +1,20 @@
-.header__container {
-  max-width: 1380px;
-  padding: 0 10px;
-  @media (min-width: $M) {
-    padding: 0 30px;
+.header {
+  padding-top: 16px;
+  @include media(M) {
+    padding-top: 30px;
   }
-  @media (min-width: $XL) {
-    padding: 0 40px;
+  @include media(XL) {
+    padding-top: 60px;
   }
 }
 
 .header__body {
   padding-top: 16px;
-  border-bottom: 0.5px solid $color-dark-blue;
-  text-align: center;
-  @media (min-width: $M) {
-    display: grid;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    grid-template-columns: 100px 1fr;
-    column-gap: 67px;
-  }
-  @media (min-width: $XL) {
-    column-gap: 150px;
-  }
-}
-
-.header__logo {
-  display: inline-block;
-  margin-bottom: 10px;
-  @media (min-width: $M) {
-    margin: 0;
-    margin-left: -35px;
-  }
-  @media (min-width: $XL) {
-    margin-left: -40px;
-  }
 }
 
 .logo__img {
-  @media (min-width: $M) {
-    width: 100px;
-    height: 42px;
-  }
-}
-
-.navigation__list {
-  display: grid;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  word-wrap: break-word;
-  color: $color-dark-blue;
-  grid-template-columns: repeat(5, auto);
-  list-style: none;
-  gap: 10px;
-  @media (min-width: $XL) {
-    grid-template-columns: repeat(5, 200px);
-    row-gap: 15px;
-  }
-}
-
-.navigation__item {
-  text-align: start;
-  @media (min-width: $M) {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-.navigation__link {
-  font-size: 9.5px;
-  font-weight: 400;
-  line-height: 13px;
-  letter-spacing: -0.03em;
-  transition: 0.3s;
-  @media (min-width: $S) {
-    font-size: 14px;
-    line-height: 25px;
-  }
-  @media (min-width: $M) {
-    font-size: 18px;
-    line-height: 25px;
-    &:hover {
-      transform: scale(1.1);
-      color: $color-secondary;
-    }
+  @include media(M) {
+    width: 80px;
+    height: 80px;
   }
 }
