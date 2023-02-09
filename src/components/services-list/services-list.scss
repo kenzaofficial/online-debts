@@ -57,6 +57,9 @@
     font-size: 27px;
     line-height: 34px;
   }
+  &:hover {
+    color: $color-secondary;
+  }
 }
 
 .card-service__wrap-description {

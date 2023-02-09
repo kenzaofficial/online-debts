@@ -43,9 +43,9 @@
 }
 
 .hero__text {
-  margin: 0;
   position: relative;
   z-index: 2;
+  margin: 0;
   @include media(MOBILE) {
     max-width: 320px;
   }
