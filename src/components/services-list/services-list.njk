@@ -8,16 +8,16 @@
         <img src="{{ item.pathImg }}" alt="company logo">
       </div>
       {% endif %}
-      <div>
+      <div class="card-service__wrap-description">
         {% if item.title %}
-        <h4>{{ item.title }}</h4>
+          <a href="#" class="card-service__title">{{ item.title }}</a>
         {% endif %}
         {% if item.subTitle %}
         <span>{{ item.subTitle }}</span>
         {% endif %}
       </div>
       {% if item.description %}
-      <p>{{ item.description }}</p>
+        <p>{{ item.description }}</p>
       {% endif %}
       {% if item.button %}
       <a href="#" class="button">
